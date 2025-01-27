@@ -1,42 +1,42 @@
 # **PluginLists**  
-> **A powerful and user-friendly plugin for managing and exploring your server's plugins!**  
+> **A powerful, user-friendly plugin to manage and explore your Minecraft server’s plugins with ease!**  
 
 ---
 
-### **🚀 Changes in This Release**  
+### **🚀 New Features & Enhancements**  
 
-#### **🛠️ Bug Fixes:**  
-- Fixed multiple null pointer exceptions.  
-- Resolved update check issues returning 403 errors.  
-- Enhanced performance during plugin diagnostics.  
+#### **🛠️ Bug Fixes**  
+- Fixed several null pointer exceptions to improve stability.  
+- Addressed update check issues causing 403 errors.  
+- Enhanced performance during plugin diagnostics for faster load times.
 
-#### **🌟 New Features:**  
-- **Pagination Support**: Use `/pluginlist <page>` to browse plugins easily across multiple pages.  
-- **Details Command**: `/pluginlist details <plugin>` now displays in-depth information about specific plugins.  
-- **Export to JSON**: Save plugin lists to a JSON file using `/pluginlist export`.  
-- **Automatic Updates**: Configurable auto-update checks at user-defined intervals.  
+#### **🌟 New Features**  
+- **Pagination Support**: Easily navigate through your plugins using `/pluginlist <page>` to view plugins over multiple pages.  
+- **Details Command**: Use `/pluginlist details <plugin>` to get detailed info about any installed plugin.  
+- **Export to JSON**: Save your plugin list to a `plugins.json` file for backups or sharing with `/pluginlist export`.  
+- **Auto-Update Checking**: The plugin now checks for updates automatically at configurable intervals.
 
-#### **⚙️ Improved Configuration:**  
-The `config.yml` has been updated to include more customizable options:  
-- `pagination.plugins_per_page`: Set the number of plugins displayed per page.  
-- `autoupdate.enabled`: Enable or disable automatic update checks.  
-- `autoupdate.interval_minutes`: Set the interval for update checks.  
+#### **⚙️ Configuration Improvements**  
+The `config.yml` file now includes more customization options for a tailored experience:  
+- `pagination.plugins_per_page`: Configure how many plugins to display per page.  
+- `autoupdate.enabled`: Toggle automatic update checks on or off.  
+- `autoupdate.interval_minutes`: Adjust the interval for checking updates.
 
-#### **🔄 Other Additions and Changes:**  
-- Notifications for admins on plugin startup or updates.  
-- Command tab-completion, including plugin names for easier usage.  
-- Refactored code for better readability and maintainability.  
+#### **🔄 Other Changes**  
+- Added notifications for admins when the plugin starts or updates.  
+- Enhanced command tab-completion for quick plugin name selection.  
+- Refined code structure for improved readability and easier maintenance.
 
-#### **❌ Removed Features:**  
+#### **❌ Removed Features**  
 - Deprecated methods that relied on removed dependencies.  
-- Removed unused and unnecessary methods to streamline the plugin.  
+- Removed unused or unnecessary features to streamline the plugin.
 
 ---
 
 ### **📋 Fixed Issues**  
-- Resolved YAML handling bugs.  
-- Fixed rare crashes caused by specific plugin queries.  
-- Addressed compatibility issues with Spigot 1.13+ API.  
+- Fixed bugs with YAML handling to improve configuration parsing.  
+- Resolved rare crashes that occurred when querying specific plugins.  
+- Improved compatibility with Spigot 1.13+ API to ensure smooth operation on newer versions.
 
 ---
 
@@ -44,16 +44,27 @@ The `config.yml` has been updated to include more customizable options:
 
 | **Command**                      | **Description**                                                                 |
 |----------------------------------|---------------------------------------------------------------------------------|
-| `/pluginlist <page>`             | View installed plugins with pagination.                                         |
-| `/pluginlist export`             | Export all installed plugins to `plugins.json`.                                |
-| `/pluginlist details <plugin>`   | Get detailed information about a specific plugin.                              |
-| `/pluginlist reload`             | Reload the plugin’s configuration.                                             |
-| `/pluginlist checkupdates`       | Manually check for updates.                                                    |
+| `/pluginlist <page>`             | View your installed plugins with pagination (e.g., `/pluginlist 1`).            |
+| `/pluginlist export`             | Export the complete plugin list to a JSON file (`plugins.json`).               |
+| `/pluginlist details <plugin>`   | View detailed information about a specific plugin.                             |
+| `/pluginlist reload`             | Reload the plugin’s configuration without restarting the server.              |
+| `/pluginlist checkupdates`       | Manually trigger a plugin update check.                                        |
 
 ---
 
-### **📌 Notes**  
-- This version is **tested with Spigot 1.13+** and requires **Java 11 or higher**.  
-- Anonymous usage statistics are collected via **bStats** to improve future updates.  
+### **📌 Important Notes**  
+- **Tested with Spigot 1.13+** and requires **Java 11 or higher** to run.  
+- **bStats** integration is enabled to collect anonymous usage statistics for improving future updates.  
+- For more details, visit the [PluginLists SpigotMC page](https://www.spigotmc.org/resources/pluginlists-view-and-manage-your-servers-installed-plugins-with-ease.122125/).
 
-For more information, visit the **[PluginLists SpigotMC Page](https://www.spigotmc.org/resources/pluginlists-view-and-manage-your-servers-installed-plugins-with-ease.122125/)**!  
+---
+
+### **💰 Support PluginLists**  
+
+If you find **PluginLists** useful and would like to support its development, consider making a donation! Every contribution helps to improve and maintain the plugin.
+
+💳 **Donate via PayPal**: [paypal.me/ArdieBanadera](https://paypal.me/ArdieBanadera)
+
+Your support is greatly appreciated and helps keep **PluginLists** updated with new features and fixes. Thank you for your generosity! 🙏
+
+---
