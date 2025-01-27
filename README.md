@@ -14,7 +14,8 @@
 - **Pagination Support**: Easily navigate through your plugins using `/pluginlist <page>` to view plugins over multiple pages.  
 - **Details Command**: Use `/pluginlist details <plugin>` to get detailed info about any installed plugin.  
 - **Export to JSON**: Save your plugin list to a `plugins.json` file for backups or sharing with `/pluginlist export`.  
-- **Auto-Update Checking**: The plugin now checks for updates automatically at configurable intervals.
+- **Auto-Update Checking**: The plugin now checks for updates automatically at configurable intervals.  
+- **Multi-Language Support**: The plugin now supports multiple languages. You can switch between languages via the `/pluginlist lang <language>` command. Available languages include English, Spanish, French, and German.
 
 #### **⚙️ Configuration Improvements**  
 The `config.yml` file now includes more customization options for a tailored experience:  
