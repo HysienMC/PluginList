@@ -1,44 +1,41 @@
 PluginLists
-Changes:
-Bug Fixes:
+A powerful and user-friendly plugin for managing and exploring your server's plugins!
 
+🚀 Changes in This Release
+🛠️ Bug Fixes:
 Fixed multiple null pointer exceptions.
-Resolved issues with update checks returning 403 errors.
-Improved performance during plugin diagnostics.
-New Features:
+Resolved update check issues returning 403 errors.
+Enhanced performance during plugin diagnostics.
+🌟 New Features:
+Pagination Support: Use /pluginlist <page> to browse plugins easily across multiple pages.
+Details Command: /pluginlist details <plugin> now displays in-depth information about specific plugins.
+Export to JSON: Save plugin lists to a JSON file using /pluginlist export.
+Automatic Updates: Configurable auto-update checks at user-defined intervals.
+⚙️ Improved Configuration:
+The config.yml has been updated to include more customizable options:
 
-Added pagination support to /pluginlist for easier navigation of plugins.
-Introduced a details command: /pluginlist details <plugin> to display detailed information about specific plugins.
-Added the ability to export plugin lists in JSON format using /pluginlist export.
-Enabled automatic update checking with configurable intervals.
-Improved Configuration:
-
-Added new options to config.yml for better customization:
-pagination.plugins_per_page: Set how many plugins to display per page.
-autoupdate.enabled: Toggle automatic update checks.
-autoupdate.interval_minutes: Configure the update interval.
-Other Additions and Changes:
-
-Notifications for admins when the plugin starts or updates.
-Added tab-completion for commands, including plugin names for quick selection.
-Refactored code to improve readability and maintainability.
-Removed Features:
-
-Deprecated outdated methods that relied on removed dependencies.
-Removed unused or unnecessary methods to streamline functionality.
-Fixed Issues:
-
+pagination.plugins_per_page: Set the number of plugins displayed per page.
+autoupdate.enabled: Enable or disable automatic update checks.
+autoupdate.interval_minutes: Set the interval for update checks.
+🔄 Other Additions and Changes:
+Notifications for admins on plugin startup or updates.
+Command tab-completion, including plugin names for easier usage.
+Refactored code for better readability and maintainability.
+❌ Removed Features:
+Deprecated methods that relied on removed dependencies.
+Removed unused and unnecessary methods to streamline the plugin.
+📋 Fixed Issues
 Resolved YAML handling bugs.
-Fixed rare crashes when handling specific plugin queries.
-Fixed compatibility issues with Spigot 1.13+ API.
-New Syntax and Commands:
-/pluginlist <page>: View all installed plugins with pagination.
-/pluginlist export: Save a list of all plugins to plugins.json.
-/pluginlist details <plugin>: Get detailed information about a specific plugin.
-/pluginlist reload: Reload the plugin’s configuration.
-/pluginlist checkupdates: Manually check for updates.
-Notes:
-This version is tested with Spigot 1.13 and higher.
-Requires Java 11+ to run.
-Added bStats integration to track plugin usage anonymously.
-For more information, visit: SpigotMC Page
+Fixed rare crashes caused by specific plugin queries.
+Addressed compatibility issues with Spigot 1.13+ API.
+📖 Commands & Syntax
+Command	Description
+/pluginlist <page>	View installed plugins with pagination.
+/pluginlist export	Export all installed plugins to plugins.json.
+/pluginlist details <plugin>	Get detailed information about a specific plugin.
+/pluginlist reload	Reload the plugin’s configuration.
+/pluginlist checkupdates	Manually check for updates.
+📌 Notes
+This version is tested with Spigot 1.13+ and requires Java 11 or higher.
+Anonymous usage statistics are collected via bStats to improve future updates.
+For more information, visit our SpigotMC page!
