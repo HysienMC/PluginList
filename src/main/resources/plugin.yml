@@ -1,0 +1,24 @@
+name: PluginLists
+version: 1.1.1
+main: liam.pluginLists.PluginLists
+author: Liam
+description: A plugin to manage, view, and export plugin lists with advanced features like filtering, pagination, diagnostics, and auto-updates.
+commands:
+  pluginlist:
+    description: Manage and view plugin lists with advanced options like filtering, diagnostics, exporting, and update checks.
+    usage: /<command> [page|filter|update|diagnostics|export|checkupdates|help]
+    permission: pluginlist.use
+    permission-message: You do not have permission to use this command.
+permissions:
+  pluginlist.use:
+    description: Allows usage of the /pluginlist command.
+    default: true
+  pluginlist.notify:
+    description: Allows the user to receive notifications about plugin updates.
+    default: op
+  pluginlist.admin:
+    description: Grants permission for administrative tasks such as reloading configurations or viewing diagnostics.
+    default: op
+  pluginlist.autoupdate:
+    description: Allows enabling/disabling automatic updates.
+    default: op

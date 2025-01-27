@@ -1,0 +1,31 @@
+# PluginLists Configuration File
+
+# Pagination settings
+pagination:
+  plugins_per_page: 5 # Number of plugins displayed per page
+
+# Auto-update settings
+auto_update:
+  enabled: true # Enable or disable auto-update functionality
+  check_interval_minutes: 60 # How often (in minutes) the plugin should check for updates
+  notify_admins: true # Notify admins when updates are available
+
+# Export settings
+export:
+  output_file: plugins.json # Name of the exported JSON file
+  pretty_format: true # Export in a pretty (indented) JSON format for better readability
+
+# Diagnostic settings
+diagnostics:
+  show_enabled_status: true # Show whether plugins are enabled or disabled in diagnostics
+  show_version_info: true # Include version information in the diagnostic output
+  show_description: true # Include plugin descriptions in the diagnostic output
+
+# Logging settings
+logging:
+  enable_startup_logs: true # Enable or disable detailed logs during plugin startup
+  enable_shutdown_logs: true # Enable or disable detailed logs during plugin shutdown
+
+# Filter settings
+filtering:
+  case_sensitive: false # Whether filtering should be case-sensitive
