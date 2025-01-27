@@ -13,6 +13,8 @@ Pagination Support: Use /pluginlist <page> to browse plugins easily across multi
 Details Command: /pluginlist details <plugin> now displays in-depth information about specific plugins.
 Export to JSON: Save plugin lists to a JSON file using /pluginlist export.
 Automatic Updates: Configurable auto-update checks at user-defined intervals.
+
+
 ⚙️ Improved Configuration:
 The config.yml has been updated to include more customizable options:
 
