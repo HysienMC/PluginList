@@ -56,4 +56,4 @@ The `config.yml` has been updated to include more customizable options:
 - This version is **tested with Spigot 1.13+** and requires **Java 11 or higher**.  
 - Anonymous usage statistics are collected via **bStats** to improve future updates.  
 
-For more information, visit our **[SpigotMC page]([https://www.spigotmc.org/](https://www.spigotmc.org/resources/pluginlists-view-and-manage-your-servers-installed-plugins-with-ease.122125/))**!  
+For more information, visit the **[PluginLists SpigotMC Page](https://www.spigotmc.org/resources/pluginlists-view-and-manage-your-servers-installed-plugins-with-ease.122125/)**!  
